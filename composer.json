@@ -1,7 +1,7 @@
 {
     "name": "yokithaiii/catalog-sbis-bitrix",
     "type": "library",
-    "description": "Integrate SBIS catalog to 1C-Bitrix.",
+    "description": "Integration of the SBIS catalog into 1C-Bitrix.",
     "keywords": ["SBIS", "Bitrix"],
     "license": "MIT",
     "require": {
