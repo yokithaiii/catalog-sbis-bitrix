@@ -61,7 +61,7 @@ $bitrix = new BitrixApiClient($bitrixAuthClient, 'https://your-bitrix-site.ru/re
 
 ### 3. Синхронизация каталога
 
-Создайте экземпляр CatalogIntegrator и вызовите метод syncCatalog для синхронизации данных:
+Создайте экземпляр CatalogService и вызовите метод syncCatalog для синхронизации данных:
 
 ```php
 use Yokithaiii\CatalogSbisBitrix\Service\CatalogService;
