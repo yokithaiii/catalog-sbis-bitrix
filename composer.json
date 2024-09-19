@@ -1,5 +1,5 @@
 {
-    "name": "yokithaii/catalog-sbis-bitrix",
+    "name": "yokithaiii/catalog-sbis-bitrix",
     "type": "library",
     "description": "Integrate SBIS catalog to 1C-Bitrix.",
     "keywords": ["SBIS", "Bitrix"],
@@ -14,7 +14,7 @@
     },
     "authors": [
         {
-            "name": "yokithaii",
+            "name": "yokithaiii",
             "email": "spartakvasilev1999@gmail.com",
             "homepage": "https://github.com/yokithaiii"
         }
