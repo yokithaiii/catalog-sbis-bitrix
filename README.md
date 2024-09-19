@@ -23,7 +23,7 @@ composer require yokithaii/catalog-sbis-bitrix
 Создайте экземпляр SbisAuthClient и передайте ему ваши учетные данные:
 
 ```php
-use Yokithaii\CatalogSbisBitrix\Client\SbisAuthClient;
+use Yokithaii\CatalogSbisBitrix\Client\Sbis\SbisAuthClient;
 
 $sbisAuthClient = new SbisAuthClient(
     'your-sbis-app-client-id',
@@ -37,7 +37,7 @@ $sbisAuthClient = new SbisAuthClient(
 Создайте экземпляр BitrixAuthClient и передайте ему ваши учетные данные:
 
 ```php
-use Yokithaii\CatalogSbisBitrix\Client\BitrixAuthClient;
+use Yokithaii\CatalogSbisBitrix\Client\Bitrix\BitrixAuthClient;
 
 $bitrixAuthClient = new BitrixAuthClient(
     'your-bitrix-client-id',
@@ -52,11 +52,11 @@ $bitrixAuthClient = new BitrixAuthClient(
 Используйте полученные токены для создания клиентов API СБИС и 1С-Битрикс:
 
 ```php
-use Yokithaii\CatalogSbisBitrix\Api\SbisApiClient;
-use Yokithaii\CatalogSbisBitrix\Api\BitrixApiClient;
+use Yokithaii\CatalogSbisBitrix\Client\Sbis\SbisApiClient;
+use Yokithaii\CatalogSbisBitrix\Client\Bitrix\BitrixApiClient;
 
-$sbisClient = new SbisApiClient($sbisAuthClient, 'https://api.sbis.ru');
-$bitrixClient = new BitrixApiClient($bitrixAuthClient, 'https://your-bitrix-site.ru/rest/1/');
+$sbis = new SbisApiClient($sbisAuthClient, 'https://api.sbis.ru');
+$bitrix = new BitrixApiClient($bitrixAuthClient, 'https://your-bitrix-site.ru/rest/1/');
 ```
 
 ### 3. Синхронизация каталога
@@ -64,9 +64,9 @@ $bitrixClient = new BitrixApiClient($bitrixAuthClient, 'https://your-bitrix-site
 Создайте экземпляр CatalogIntegrator и вызовите метод syncCatalog для синхронизации данных:
 
 ```php
-use Yokithaii\CatalogSbisBitrix\Service\CatalogIntegrator;
+use Yokithaii\CatalogSbisBitrix\Service\CatalogService;
 
-$integrator = new CatalogIntegrator($sbisClient, $bitrixClient);
+$integrator = new CatalogService($sbis, $bitrix);
 $integrator->syncCatalog();
 ```
 
