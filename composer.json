@@ -5,7 +5,8 @@
     "keywords": ["SBIS", "Bitrix"],
     "license": "MIT",
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "ext-http": "*"
     },
     "autoload": {
         "psr-4": {
