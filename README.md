@@ -1,6 +1,6 @@
 # Catalog SBIS to 1C-Bitrix Integration
 
-<a href="https://github.com/ramsey/uuid/blob/4.x/LICENSE"><img src="https://img.shields.io/packagist/l/ramsey/uuid.svg?style=flat-square&colorB=darkcyan" alt="Read License"></a>
+<a href="https://github.com/yokithaiii/catalog-sbis-bitrix/blob/main/LICENSE"><img src="https://img.shields.io/packagist/l/ramsey/uuid.svg?style=flat-square&colorB=darkcyan" alt="Read License"></a>
 
 Эта библиотека интегрирует каталог из СБИС (Система Бизнес-Информации) с 1С-Битрикс (Управление сайтом). Она позволяет синхронизировать товары, категории и другие данные между СБИС и 1С-Битрикс, используя их REST API.
 
