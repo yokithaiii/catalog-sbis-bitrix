@@ -1,0 +1,22 @@
+{
+    "name": "yokithaii/catalog-sbis-bitrix",
+    "type": "library",
+    "description": "Integrate SBIS catalog to 1C-Bitrix.",
+    "keywords": ["SBIS", "Bitrix"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yokithaii\\CatalogSbisBitrix\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yokithaii",
+            "email": "spartakvasilev1999@gmail.com",
+            "homepage": "https://github.com/yokithaiii"
+        }
+    ]
+}
