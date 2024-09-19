@@ -1,6 +1,6 @@
 <?php
 
-namespace Yokithaii\CatalogSbisBitrix\Interface;
+namespace Yokithaiii\CatalogSbisBitrix\Interface;
 
 interface ProductInterface
 {

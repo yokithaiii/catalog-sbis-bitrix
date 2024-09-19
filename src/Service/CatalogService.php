@@ -1,9 +1,9 @@
 <?php
 
-namespace Yokithaii\CatalogSbisBitrix\Service;
+namespace Yokithaiii\CatalogSbisBitrix\Service;
 
-use Yokithaii\CatalogSbisBitrix\Client\Bitrix\BitrixApiClient;
-use Yokithaii\CatalogSbisBitrix\Client\Sbis\SbisApiClient;
+use Yokithaiii\CatalogSbisBitrix\Client\Bitrix\BitrixApiClient;
+use Yokithaiii\CatalogSbisBitrix\Client\Sbis\SbisApiClient;
 
 class CatalogService
 {

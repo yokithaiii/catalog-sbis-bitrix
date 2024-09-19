@@ -1,8 +1,8 @@
 <?php
 
-namespace Yokithaii\CatalogSbisBitrix\Client\Bitrix;
+namespace Yokithaiii\CatalogSbisBitrix\Client\Bitrix;
 
-use Yokithaii\CatalogSbisBitrix\Exception\ApiException;
+use Yokithaiii\CatalogSbisBitrix\Exception\ApiException;
 
 class BitrixAuthClient
 {

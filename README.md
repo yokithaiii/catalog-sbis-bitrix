@@ -37,7 +37,7 @@ $sbisAuthClient = new SbisAuthClient(
 Создайте экземпляр BitrixAuthClient и передайте ему ваши учетные данные:
 
 ```php
-use Yokithaiii\CatalogSbisBitrix\Client\Bitrix\BitrixAuthClient;
+use Yokithaii\CatalogSbisBitrix\Client\Bitrix\BitrixAuthClient;
 
 $bitrixAuthClient = new BitrixAuthClient(
     'your-bitrix-client-id',
@@ -53,7 +53,7 @@ $bitrixAuthClient = new BitrixAuthClient(
 
 ```php
 use Yokithaiii\CatalogSbisBitrix\Client\Sbis\SbisApiClient;
-use Yokithaiii\CatalogSbisBitrix\Client\Bitrix\BitrixApiClient;
+use Yokithaii\CatalogSbisBitrix\Client\Bitrix\BitrixApiClient;
 
 $sbis = new SbisApiClient($sbisAuthClient, 'https://api.sbis.ru');
 $bitrix = new BitrixApiClient($bitrixAuthClient, 'https://your-bitrix-site.ru/rest/1/');

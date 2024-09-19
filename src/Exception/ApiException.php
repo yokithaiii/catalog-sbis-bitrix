@@ -1,6 +1,6 @@
 <?php
 
-namespace Yokithaii\CatalogSbisBitrix\Exception;
+namespace Yokithaiii\CatalogSbisBitrix\Exception;
 
 class ApiException extends SbisBitrixException
 {

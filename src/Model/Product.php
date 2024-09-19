@@ -1,8 +1,8 @@
 <?php
 
-namespace Yokithaii\CatalogSbisBitrix\Model;
+namespace Yokithaiii\CatalogSbisBitrix\Model;
 
-use Yokithaii\CatalogSbisBitrix\Interface\ProductInterface;
+use Yokithaiii\CatalogSbisBitrix\Interface\ProductInterface;
 
 class Product implements ProductInterface
 {
