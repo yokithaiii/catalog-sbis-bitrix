@@ -70,6 +70,36 @@ $integrator = new CatalogService($sbis, $bitrix);
 $integrator->syncCatalog();
 ```
 
+## Пример получения данных со СБИС
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+use Yokithaiii\CatalogSbisBitrix\Client\Sbis\SbisAuthClient;
+use Yokithaiii\CatalogSbisBitrix\Client\Sbis\SbisApiClient;
+
+$sbisAuthClient = new SbisAuthClient(
+    'your-sbis-app-client-id',
+    'your-sbis-app-secret',
+    'your-sbis-secret-key'
+);
+
+$sbisClient = new SbisApiClient($sbisAuthClient, 'https://api.sbis.ru');
+
+// get products
+$products = $sbisClient->getProducts({pointID}, {priceListID}, false, 0, 10);
+
+// get sale points
+$points = $sbisClient->getSalePoints({pointID}, 0, 10);
+
+// get price lists
+$priceLists = $sbisClient->getPriceLists({pointID}, '2024-09-20', 0, 10);
+
+print_r($products);
+```
+
 ## Лицензия
 
 Этот проект лицензирован под MIT License. Подробности смотрите в файле LICENSE.
